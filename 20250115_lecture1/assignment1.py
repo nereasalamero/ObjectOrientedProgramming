@@ -1,3 +1,13 @@
+# **********************************************
+# Title:        Asignments 1 & 2
+# Author:       Nerea Salamero Labara
+# Date:         15/01/2025
+# File:         assignment1.py
+# Subject:      Object Oriented Programming
+# Description:  
+# **********************************************
+
+
 # Create a dictionary
 my_dict = {'name': 'John', 'age': 25, 'city': 'New York'}
 
@@ -26,12 +36,6 @@ keys = my_dict.keys()
 values = my_dict.values()
 print(keys)     # Output: dict_keys(['name', 'age', 'occupation'])
 print(values)   # Output: dict_values(['John', 26, 'Engineer'])
-
-
-# def smallest_value(person_1: dict, person_2: dict, person_3: dict):
-#     min_value = min(person_1['age'], person_2['age'], person_3['age'])
-#     return 
-
 
 # Assignment 1#: Find the Smallest Value
 # Objective:
