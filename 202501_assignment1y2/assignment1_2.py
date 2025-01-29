@@ -2,7 +2,7 @@
 # Title:        Asignments 1 & 2
 # Author:       Nerea Salamero Labara
 # Date:         22/01/2025
-# File:         assignment1.py
+# File:         assignment1_2.py
 # Subject:      Object Oriented Programming
 # Description:  
 # **********************************************
@@ -65,8 +65,8 @@ print(smallest_value({'name': 'Alice', 'age': 25, 'height': 160}, {'name': 'Bob'
 
 
 
-# Assignment 2#
-# Write a function named calculate_row_sums(my_m_matrix: list), where you give an integer matrix as its argument.
+# Assignment 2: Calculate Row Sums
+# Write a function named calculate_row_sums(my_matrix: list), where you give an integer matrix as its argument.
 # The function adds a new element on each row in the matrix. This element contains the sum of the other elements on that row.
 # 
 # Example: 

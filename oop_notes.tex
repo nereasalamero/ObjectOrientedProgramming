@@ -1,0 +1,156 @@
+\documentclass{article}
+% Packages
+\usepackage[utf8]{inputenc}  % Encoding
+\usepackage{amsmath, amssymb} % Math packages
+\usepackage{graphicx} % For images
+\usepackage{hyperref} % For hyperlinks
+\usepackage{geometry} % Page layout
+\geometry{margin=1in}
+
+
+% Title Information
+\title{Object Oriented Programming}
+\author{Nerea Salamero}
+\date{Spring semester 2025}
+%\date{\today}   % Otra posibilidad
+
+\begin{document}
+
+% Title page
+\maketitle
+
+\section{Index}
+
+% ---------------------------------------------------------------------------
+%                     LECTURE 1: OBJECTS AND METHODS
+% ---------------------------------------------------------------------------
+\section{Lecture 1: Objects and Methods}
+\subsection{Tuples}
+A tuple is an ordered, immutable collection of elements. Unlike lists, tuples cannot be modified once created. They are defined using parentheses ().
+\begin{verbatim}
+    # Creating a tuple
+    my_tuple = (1, 2, 3, 'a', 'b', 'c')
+
+    # Accessing elements
+    print(my_tuple[0])      # Output: 1
+    print(my_tuple[3])      # Output: 'a'
+    
+    #Slicing
+    print(my_tuple[1:4])    # Output: (2, 3, 'a')
+    
+    # Concatenating tuples
+    tuple1 = (1, 2, 3)
+    tuple2 = ('a', 'b', 'c')
+    concatenated_tuple = tuple1 + tuple2
+    print(concatenated_tuple)         # Output: (1, 2, 3, 'a', 'b', 'c')
+    
+    #Tuple with a mutable element (a list)
+    mutable_tuple = ([1, 2, 3], 'a', 'b')
+    mutable_tuple[0].append(4)
+    print(mutable_tuple)        # Output: ([1, 2, 3, 4], 'a', 'b')
+\end{verbatim}
+Tuples are often used when the order and the mutability of elements are important. They can be used as keys in dictionaries (unlike lists) and are generally used in situations where the data should not be modified after creation.
+Since tuples are immutable, you can't do operations that modify the tuple in-place like you can with lists.
+They are useful when you want to create a collection of items that should not be changed throughout the program. They are also often used for functions that return multiple values.
+
+\subsection{Dictionaries}
+A dictionary is a built-in data type that allows you to store and retrieve data in key-value pairs. Dictionaries are defined using curly braces \{\} and consist of a set of key-value pairs, where each key must be unique.
+
+Dictionaries are widely used in Python for tasks such as storing configuration settings, representing JSON-like data structures, and more. They provide a flexible and efficient way to manage and organize data.
+
+Starting from Python 3.7, dictionaries maintain the order of insertion of items.T his means that the order in which key-value pairs are added to the dictionary is preserved when iterating over the dictionary. Prior to Python 3.7, dictionaries did not guarantee any specific order.
+In Python, dictionaries can have different structurally identical representations. 
+
+Using Literal Notation
+
+\subsection{Objects and Methods}
+Everything in Python is an object. Strings, lists, dictionaries, and even functions are objects.
+Common string methods:
+\begin{itemize}
+    \item \texttt{str.capitalize()}: Capitalizes the first character.
+    \item \texttt{str.upper()}, \texttt{str.lower()}: Convert to uppercase or lowercase.
+    \item \texttt{str.split(separator)}: Splits a string into a list.
+    \item \texttt{str.join(iterable)}: Joins elements of an iterable into a string.
+\end{itemize}
+
+\subsection{Assignments}
+\textbf{Assignment 1}: Write a function \texttt{smallest\_value()} that finds the smallest value in three dictionaries.
+
+\textbf{Assignment 2}: Write a function \texttt{calculate\_row\_sums()} that adds a new element to each row in a matrix containing the sum of the row elements.
+
+
+% ---------------------------------------------------------------------------
+%                     LECTURE 2: CLASSES AND OBJECTS
+% ---------------------------------------------------------------------------
+\section{Lecture 2: Classes and Objects}
+\subsection{Goals}
+\begin{itemize}
+    \item You realize what a class is.
+    \item You are able to define a class.
+    \item You realize what an object is
+    \item You are able to create instances of a class
+    \item You realize what an attribute is
+    \item You are able to create attributes into a class
+    \item You realize what a method is
+\end{itemize}
+In object-oriented programming (OOP), classes and objects are fundamental concepts. They provide a way to structure and organize code in a more modular and reusable manner. Let's explore the concepts of classes and objects in Python.
+
+\subsection{Classes}
+A class is a blueprint or template for creating objects. It defines a set of attributes (data) and methods (functions) that the objects will have.
+In Python, a class is created using the \textbf{class} keyword.
+
+\subsubsection{Simple class}
+Now we create a simple skeleton of a class. Class does not do anything… yet.
+
+\begin{verbatim}
+    class Simple_class:
+        pass
+    
+    sc = Simple_class()
+    sc.name = "my first class"
+    sc.age = 1
+
+    print(sc.name)
+    print(sc.age)
+    print("...")
+\end{verbatim}
+
+The provided code indicates to Python that a class called \texttt{Simple\_class} is being defined. Although the class currently lacks any functionality, we can still instantiate an object based on it.
+Now, consider a program in which two variables, 'name' and 'age,' are added to a \texttt{Simple\_class} object. Any variables associated with an object are referred to as its attributes, specifically, data attributes or, at times, instance variables. These attributes linked to an object can be retrieved through the object.
+
+    Example:
+    \begin{verbatim}
+    class Dog:
+        def __init__(self, name, age):
+            self.name = name
+            self.age = age
+        def bark(self):
+            print(f"{self.name} says Woof!")
+    
+    dog1 = Dog("Nino", 3)
+    dog1.bark()
+    \end{verbatim}
+
+\subsection{Objects}
+Objects are instances of a class that have their own attributes and methods. In Python, an object is an instance of a class, and a class is a blueprint for creating objects. Objects can have associated methods, which are functions that are defined within the class and can operate on the object's attributes.
+Methods are essentially functions that are bound to the object and can access and modify its state.
+
+\subsubsection{Instantiation, Encapsulation, Inheritance, and Polymorphism}
+\begin{itemize}
+    \item \textbf{Instantiation}: Process of creating an object from a class.
+    \item \textbf{Encapsulation}: Bundles data and methods within a class.
+    \item \textbf{Inheritance}: Allows a class to inherit attributes and methods from another class. It promotes code reuse and extensibility.
+    \item \textbf{Polymorphism}: Enables treating objects of different classes as objects of a common base class. It enables flexibility and extensibility in code.
+\end{itemize}
+These concepts form the foundation of object-oriented programming and are widely used in Python and many other programming languages.
+
+\subsection{Assignments}
+\textbf{Assignment 3}: Write a function \texttt{list\_all\_years(dates: list)} which takes a list of date type objects as its argument. The function should return a new list, which contains the years in the original list in chronological order, from earliest to latest
+
+\textbf{Assignment 4}: Implement a \texttt{ShoppingList} class with methods for adding items, removing items, getting the count of unique items, getting the total units, and displaying the current shopping list, etc.
+
+
+\end{document}
+
+
+\end{document}
