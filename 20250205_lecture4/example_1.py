@@ -13,6 +13,20 @@ display_person_info(me)
 brother = Person(name = "Little brother", age = 0.5)
 display_person_info(brother)
 
+class Person2:
+    def __init__(self, name: str, age: int):
+        self.name = name
+        self.age = age
+    
+    def display_person_info(self, p):
+        print(f"Name: {p.name}, Age: {p.age}")
+
+me2 = Person2(name = "Humpty Dumpty", age = 1)
+me2.display_person_info(me)
+
+brother2 = Person2(name = "Little brother", age = 0.5)
+brother2.display_person_info(brother)
+
 
 # Function to calculate the area of a rectangle
 class Rectangle:
