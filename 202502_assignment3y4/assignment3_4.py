@@ -11,21 +11,21 @@
 # Write a function named list_all_years(dates: list) which takes a list of date type objects as its argument. The 
 # function should return a new list, which containsthe years in the original list in chronological order, from 
 # earliest to latest. An example of the function in action.
-from datetime import date
-
-def list_all_years(dates: list):
-    years = []
-    for date_o in dates:
-        years.append(date_o.year)
-    return sorted(years)
-
-# Test
-d1 = date(2018, 2, 1)
-d2 = date(2023, 10, 20)
-d3 = date(1998, 1, 7)
-
-years = list_all_years([d1, d2, d3])
-print(years)
+# from datetime import date
+# 
+# def list_all_years(dates: list):
+#     years = []
+#     for date_o in dates:
+#         years.append(date_o.year)
+#     return sorted(years)
+# 
+# # Test
+# d1 = date(2018, 2, 1)
+# d2 = date(2023, 10, 20)
+# d3 = date(1998, 1, 7)
+# 
+# years = list_all_years([d1, d2, d3])
+# print(years)
 
 
 

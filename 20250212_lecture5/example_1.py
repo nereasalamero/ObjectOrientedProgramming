@@ -17,9 +17,23 @@ class MathOperations:
             return True
         else:
             return False
+    @staticmethod
+    def add(x, y):
+        return x + y
+    
+    @staticmethod
+    def multiply(x, y):
+        return x * y
         
 math_object = MathOperations(4, 6)
 
 print("Substract result: ", math_object.substract())
 print(f"Substract result: {math_object.substract(4, 6)}")
 print(f"Substract result: {math_object.substract("4", 6)}")
+    
+# Using static methods
+result_add = MathOperations.add(3, 5)
+result_multiply = MathOperations.multiply(4, 6)
+
+print("Addition result: ", result_add)
+print("Multiplication result: ", result_multiply)
