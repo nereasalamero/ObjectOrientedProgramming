@@ -1,7 +1,7 @@
 # Object Oriented Programming
 **Author:** `Salamero Labara, Nerea`<br>
 **Date:** `Spring semester (January-May) 2025` <br>
-**Summary:** This repository contains the small projects I developed in Mobile Technology And Programming, a subject I did while I was studying as an exchange student at Savonia UAS.
+**Summary:** This repository contains the small projects I developed in Object Oriented Programming, a subject I did while I was studying as an exchange student at Savonia UAS.
 
 ## Theory
 **Lecture 1.**  Objects and Methods <br>
