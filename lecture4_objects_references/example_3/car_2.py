@@ -1,6 +1,11 @@
+# Author:       Nerea Salamero Labara
+# Date:         16/03/2025
+# File:         car.py
+# Description:  
+
 from engine import Engine
 
-
+# Car class
 class Car:
     def __init__(self, make, model, engine):
         self.make = make
@@ -15,10 +20,9 @@ class Car:
         print(f"The {self.make} {self.model} stops.")
         self.engine.stop()
 
-
+# Main using a dictionary
 if __name__ == "__main__":
-    cars = []
-
+    cars = {}
 
     my_first_engine = Engine("gasoline")
     my_second_engine = Engine("diesel")
@@ -27,24 +31,16 @@ if __name__ == "__main__":
     my_second_car = Car("Ford", "Escord", my_first_engine)
     my_third_car = Car("Honda", "Civic", my_second_engine)
 
-    cars.append(my_first_car)
-    cars.append(my_second_car)
-    cars.append(my_third_car)
-    cars.append(my_third_car)
+    cars["k1"] = my_first_car
+    cars["k2"] = my_second_car
+    cars["k3"] = my_third_car
+
+    my_first_car.make = "Toyota new"
 
     for car in cars:
-        car.start()
+        cars[car].start()
     
     for car in cars:
-        car.stop()
+        cars[car].stop()
 
-    print(cars[0] is cars[1])
-    print(cars[0] is cars[2])
-    print(cars[0] is cars[3])
-    print(cars[3] is cars[3])
     
-    
-    print(cars[0] == cars[1])
-    print(cars[0] == cars[2])
-    print(cars[0] == cars[3])
-    print(cars[3] == cars[3])

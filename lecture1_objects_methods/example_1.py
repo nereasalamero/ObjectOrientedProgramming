@@ -1,3 +1,9 @@
+# Author:       Nerea Salamero Labara
+# Date:         15/01/2025
+# File:         example_1.py
+# Description:  Introduction to tuples.
+
+# Creating a tuple
 name = "Happy new year!"
 author = "Author name"
 year = 2025

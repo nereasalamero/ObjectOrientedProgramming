@@ -1,4 +1,10 @@
-from datetime import datetime, date
+# Author:       Nerea Salamero Labara
+# Date:         12/02/2025
+# File:         example_1.py
+# Description:  Class definition for a bird, using a constructor, methods, and attributes.
+
+from datetime import datetime
+
 class Bird:
     species = "Unknown"
 

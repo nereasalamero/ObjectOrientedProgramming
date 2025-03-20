@@ -1,3 +1,7 @@
+# Author:       Nerea Salamero Labara
+# Date:         15/01/2025
+# File:         example_4.py
+# Description:  Objects and methods. 
 
 def average_city(city_1, city_2, city_3):
     def calculate_population_density(city):

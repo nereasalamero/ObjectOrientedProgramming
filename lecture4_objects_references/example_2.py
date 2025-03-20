@@ -1,3 +1,8 @@
+# Author:       Nerea Salamero Labara
+# Date:         19/02/2025
+# File:         example_3.py
+# Description:  Composition example.
+
 
 class Engine:
     def __init__(self, fuel_type):

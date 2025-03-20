@@ -1,3 +1,7 @@
+# Author:       Nerea Salamero Labara
+# Date:         19/02/2025
+# File:         example_3.py
+# Description:  Setter method or mutator for class attributes.
 
 class Car:
     def __init__(self, make):

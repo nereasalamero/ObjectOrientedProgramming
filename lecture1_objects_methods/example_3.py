@@ -1,3 +1,9 @@
+# Author:       Nerea Salamero Labara
+# Date:         15/01/2025
+# File:         example_3.py
+# Description:  Objects and methods
+
+# Built-in types
 def my_func():
     print("Hello World!")
 

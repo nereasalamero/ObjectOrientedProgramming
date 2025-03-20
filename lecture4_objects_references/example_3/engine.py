@@ -1,3 +1,7 @@
+# Author:       Nerea Salamero Labara
+# Date:         16/03/2025
+# File:         engine.py
+# Description:  Aggregation example.
 
 class Engine:
     def __init__(self, fuel_type):

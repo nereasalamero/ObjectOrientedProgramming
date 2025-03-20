@@ -1,3 +1,9 @@
+# Author:       Nerea Salamero Labara
+# Date:         29/01/2025
+# File:         example_2.py
+# Description:  Function to display object information.
+#               Function to calculate the area of a rectangle.
+#               Function to compare objects.
 
 class Person:
     def __init__(self, name: str, age: int):

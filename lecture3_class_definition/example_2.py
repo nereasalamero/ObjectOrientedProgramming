@@ -1,3 +1,9 @@
+# Author:       Nerea Salamero Labara
+# Date:         12/02/2025
+# File:         example_2.py
+# Description:  Class definition for a math operations using helper and static methods.
+ 
+
 class MathOperations:
     def __init__(self, x: int, y: int):
         self.x = x

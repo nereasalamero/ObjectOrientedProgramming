@@ -1,3 +1,7 @@
+# Author:       Nerea Salamero Labara
+# Date:         19/02/2025
+# File:         example_3.py
+# Description:  Aggregation example.
 
 class Employee:
     def __init__(self, name, employee_id):

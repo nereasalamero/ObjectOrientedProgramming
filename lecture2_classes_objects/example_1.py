@@ -1,5 +1,8 @@
+# Author:       Nerea Salamero Labara
+# Date:         29/01/2025
+# File:         example_1.py
+# Description:  Simple class example
 
-'''
 # Simple class example
 class Simple_class:
     pass
@@ -13,18 +16,18 @@ print(sc.age)
 print("...")
 
 # Another example
-class Dog:
+class Dog1:
     def __init__(self, name, age):
         self.name = name
         self.age = age
     def bark(self):
         print(f"{self.name} says Woof!")
 
-dog1 = Dog(name = "Nino", age = 12)
+dog1 = Dog1(name = "Nino", age = 12)
 dog1.bark()
 
 # Another example
-class Cat:
+class Cat1:
     def __init__(self, name: str, age: int, times: int):
         self.name = name
         self.age = age
@@ -33,11 +36,11 @@ class Cat:
         for i in range(self.times):
             print(f"{self.name} says Miau!")
 
-cat1 = Cat(name = "Pipo", age = 5, times = 5)
+cat1 = Cat1(name = "Pipo", age = 5, times = 5)
 cat1.miau()
 
-# Another example
-class Cat:
+# Another example - static binding
+class Cat2:
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
@@ -53,15 +56,14 @@ class Cat:
             else:
                 print(f"{self.name} says Miau {i}")
 
-cat = Cat(name = "Pipo", age = 5)
-cat.miau(5)
-cat.miau(5, 1)
-cat.miau(5, 1, 1)
-cat.miau(5, 1, 1, 1)
-'''
+cat2 = Cat2(name = "Pipo", age = 5)
+cat2.miau(5)
+cat2.miau(5, 1)
+cat2.miau(5, 1, 1)
+cat2.miau(5, 1, 1, 1)
 
 # Another example - encapsulation
-class Dog:
+class Dog2:
     def __init__(self, name: str, age: int):
         self.name = name
         self.age = age
@@ -73,7 +75,7 @@ class Dog:
         self.age += 1
         print(f"{self.name} is now {self.age} years old")
 
-dog2 = Dog(name = "Nino", age = 12)
+dog2 = Dog2(name = "Nino", age = 12)
 dog2.bark()
 dog2.celebrate_birthday()
 dog2.celebrate_birthday()

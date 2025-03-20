@@ -1,5 +1,13 @@
+# Author:       Nerea Salamero Labara
+# Date:         12/02/2025
+# File:         example_3.py
+# Description:  Dynamic method bound to an instance of a class.
+#               Protected and private methods in a class.
+#               Getter and setter methods for class attributes.
+
 import types
 
+# Dynamic method bound to an instance of a class
 class Car:
     def __init__(self, make):
         self.make = make
@@ -11,6 +19,7 @@ my_car = Car("Toyota")  # Create an instance of the Car class
 my_car.dynamic_method = types.MethodType(dynamic_method, my_car)    #Bind the dynamic method to the instance
 my_car.dynamic_method()     # Call the dynamic method
 
+# Protected and private methods
 class Car2:
     def __init__(self, make, model):
         self._make = make
