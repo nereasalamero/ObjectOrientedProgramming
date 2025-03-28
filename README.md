@@ -66,3 +66,5 @@ Implement a Stopwatch class with private attributes and methods like start(), st
 
 
 ### Assignment 7
+- Create a base class: **Animal** <br>
+- Create subclasses: **Mammal** and **Bird**
