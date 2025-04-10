@@ -68,3 +68,19 @@ Implement a Stopwatch class with private attributes and methods like start(), st
 ### Assignment 7
 - Create a base class: **Animal** <br>
 - Create subclasses: **Mammal** and **Bird**
+
+### Assignment 8
+Create a MyShoppingList class and adjust the class so that it is iterable and can thus be used as shown on the Lesson 7 slides.
+
+### Assignment 9
+Create a program (class AreaCalculator) that calculates the area of geometric shapes.<br>
+The program should have “exception” classes: ShapeError as the base exception class, and two subclasses, NegativeDimensionError and InvalidShapeError.
+- ShapeError: Base exception class representing errors related to shape calculations.
+- NegativeDimensionError: Subclass of ShapeError, raised when the dimensions (length, width, etc.) provided to calculate the area are negative.
+- InvalidShapeError: Subclass of ShapeError, raised when an invalid shape type is provided for calculation.
+- The program should include methods for calculating the area of rectangles and circles. Handle exceptions appropriately for negative dimensions and invalid shape types.
+
+AreaCalculator has class methods:
+- rectangle_area(self, length, width)
+- circle_area(self, radius)
+- calculate_area(self, shape_type, *args)
