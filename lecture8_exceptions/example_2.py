@@ -43,3 +43,5 @@ if __name__ == "__main__":
         print("Error: ", e)
     else:
         print("No errors.")
+    finally:
+        print("End of program.")
